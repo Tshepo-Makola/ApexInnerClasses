@@ -1,0 +1,80 @@
+public class Company {
+	private String CompanyName;
+    private String ceo;
+    private Integer employeeCount;
+    private long revenue;
+    
+    //Initialization Block
+   /* {	CompanyName = 'FriendlyTech';
+        ceo = 'TL Makola';
+        employeeCount = 10;
+     	revenue = 1000000000;
+    } */
+    public Company(){
+        this.CompanyName = CompanyName;
+        this.ceo = ceo;
+        this.employeeCount = employeeCount ;
+        this.revenue = revenue;
+    }
+    
+    //setters
+    //
+    //
+     public void setCompanyName(String companyName) {
+        this.companyName = companyName;
+    }
+
+    public void setCeo(String ceo) {
+        this.ceo = ceo;
+    }
+
+    public void setEmployeeCount(integer employeeCount) {
+        this.employeeCount = employeeCount;
+    }
+
+    public void setRevenue(Long revenue) {
+        this.revenue = revenue;
+    }
+    
+    //List of all Customers 
+    List<Client> customers = new List<Client>();
+
+    //add new Customer
+    public void addNewCustomer(String clientName, String website, 
+                               String email, Long phone){
+       Client customer = new Client(clientName ,website ,email ,phone);                           
+                                   
+       customers.Add(customer); 
+    }
+    //Print all thelist of all customers
+    public void printAllCustomers(){
+       
+        for(Client customer : customers )
+        {
+            
+          System.debug('customer Name : ' +customer.clientName + '\n' 
+                       + 'Customer website :' + customer.website + '\n'
+                       +'Customer Email :'+customer.email + '\n' 
+                       +'customer Phone :'+customer.phone);
+        }
+        
+     }
+    //
+    //private inner class 
+  private class Client {
+    Public  String clientName;
+    Public String website;
+    Public String email;
+    Public Long phone;
+
+
+   public Client(String clientName, String website, String email, Long phone) {
+        this.clientName = clientName;
+        this.website = website;
+        this.email = email;
+        this.phone = phone;
+    }
+    
+  }
+    
+}

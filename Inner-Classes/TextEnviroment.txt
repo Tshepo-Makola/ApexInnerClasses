@@ -1,0 +1,19 @@
+
+Company company = new Company();
+
+company.setCompanyName('FriendlyTech');
+company.setCeo('TL Makola');
+company.setEmployeeCount(1);
+company.setRevenue(1000000000);
+
+company.addNewCustomer('Captain Kid', 'www.kid.com',
+                       'kid@gmail.com', 0716507890L);
+company.addNewCustomer('Captain Law', 'www.Law.com',
+                       'Law@gmail.com', 0714707770L);
+company.addNewCustomer('Captain Luffy', 'www.Luffy.com',
+                       'Luffy@gmail.com', 0726517810L);
+
+company.printAllCustomers();
+
+
+
